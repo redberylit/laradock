@@ -61,6 +61,10 @@ DOCKER_HOST_IP=10.0.75.1
 # Choose a Remote Interpreter entry matching name. Default is `laradock`
 PHP_IDE_CONFIG=serverName=laradock
 
+### PHP DOWNGRADEOPENSSL TLS AND SECLEVEL #################
+
+PHP_DOWNGRADE_OPENSSL_TLS_AND_SECLEVEL=false
+
 ### Windows Path ##########################################
 
 # A fix for Windows users, to ensure the application path works
@@ -424,6 +428,9 @@ MINIO_PORT=9000
 
 ADM_PORT=8081
 ADM_INSTALL_MSSQL=false
+ADM_PLUGINS=
+ADM_DESIGN=pepa-linha
+ADM_DEFAULT_SERVER=mysql
 
 ### PHP MY ADMIN ##########################################
 
@@ -916,4 +923,4 @@ GEARMAN_MYSQL_DB=Gearmand
 GEARMAN_MYSQL_TABLE=gearman_queue
 
 ### ELK Stack ##################################################
-ELK_VERSION=7.5.1
+ELK_VERSION=7.9.1
