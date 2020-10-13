@@ -373,8 +373,14 @@ services:
       depends_on:
         - php-fpm
       networks:
-        - frontend
-        - backend
+        backend:
+          aliases:
+            - ias-service.local
+            - ias.local
+        frontend:
+          aliases:
+            - ias-service.local
+            - ias.local
 
 ### Blackfire ########################################
     blackfire:
